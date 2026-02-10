@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "sb-charts"
+version = "0.1.0"
+description = "Enriched Matplotlib Charting Library"
+authors = ["Chris Peterson <chris.will.peterson@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "sb-charts", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+ruff = "^0.4"
+mypy = "^1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
