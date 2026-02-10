@@ -8,6 +8,7 @@ packages = [{ include = "sb_charts", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+matplotlib = "^3.10.8"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0"
