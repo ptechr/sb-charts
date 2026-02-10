@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Enriched Matplotlib Charting Library"
 authors = ["Chris Peterson <chris.will.peterson@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "sb-charts", from = "src" }]
+packages = [{ include = "sb_charts", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.12"
