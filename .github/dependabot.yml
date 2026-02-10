@@ -1,11 +1,12 @@
 version: 2
 updates:
-  - package-ecosystem: "poetry"
-    directory: "/"           # location of pyproject.toml
+  - package-ecosystem: "pip"    # use pip, not poetry
+    directory: "/"              # location of pyproject.toml & poetry.lock
     schedule:
-      interval: "weekly"     # check for updates weekly
+      interval: "weekly"
+    # Optional: limit open PRs
     open-pull-requests-limit: 10
-    # optional: ignore certain dependencies
+    # Optional: ignore certain packages
     # ignore:
     #   - dependency-name: "some-package"
     #     versions: ["<2.0.0"]
