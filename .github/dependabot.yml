@@ -1,0 +1,11 @@
+version: 2
+updates:
+  - package-ecosystem: "poetry"
+    directory: "/"           # location of pyproject.toml
+    schedule:
+      interval: "weekly"     # check for updates weekly
+    open-pull-requests-limit: 10
+    # optional: ignore certain dependencies
+    # ignore:
+    #   - dependency-name: "some-package"
+    #     versions: ["<2.0.0"]
